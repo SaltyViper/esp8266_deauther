@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=0.8">
 	</head>
-	<body>
+	<body bgcolor="#0f0f0f">
 		<nav>
 			<a href="/">APs</a>
 			<a href="clients">Clients</a>
@@ -35,27 +35,27 @@
 			
 			<p class="small">
 				<br />
-				<b>deauth [deauthentication attack]:</b><br />
+				<b>Deauth [deauthentication attack]:</b><br />
 				Sends deauthentication frames and dissociation frames to the selected client(s) in the selected WiFi access point(s).
 				<br />
-				<b>Note: </b>
+				Note: 
 				If no client is selected, the packets are sent as broadcast!
 				<br /><br />
-				<b>beacon [beacon flood attack]:</b><br />
+				<b>Beacon [beacon flood attack]:</b><br />
 				(clone:) Spams beacon frames with a similar SSID as the selected WiFi access point(s).<br />
 				(list:) Spams beacon frames with all SSIDs in the list below.
 				<br /><br />
-				<b>probe request [probe request flood attack]:</b><br />
+				<b>Probe request [probe request flood attack]:</b><br />
 				Spams probe request frames with all SSIDs in the list below.<br />
 				Usefull to confuse and spam WiFi trackers.
 			</p>
 			<br />
-			<p class="block bold">SSIDs: <span id="ssidCounter">0/64</span> <button class="marginNull warnBtn" onclick="clearSSID()">clear</button> <button class="marginNull" onclick="randomSSID()">random</button> <button class="marginNull" onclick="cloneSSID()">clone</button> <button class="marginNull" onclick="addSSID()">add</button></p>
+			<p class="block bold">SSIDs: <span id="ssidCounter">0/64</span> <button class="marginNull warnBtn" onclick="clearSSID()">Clear</button> <button class="marginNull" onclick="randomSSID()">Random</button> <button class="marginNull" onclick="cloneSSID()">Clone</button> <button class="marginNull" onclick="addSSID()">Add</button></p>
 			<br />
 			<table>
 			</table>
 			<br />
-			<button class="marginNull warnBtn" onclick="resetSSID()">reset</button> <button class="marginNull" onclick="saveSSID()">save</button> <p class="small" id="saved">saved</p>
+			<button class="marginNull warnBtn" onclick="resetSSID()">Reset</button> <button class="marginNull" onclick="saveSSID()">Save</button> <p class="small" id="saved">Saved</p>
 		</div>
 		<script src="js/functions.js"></script>
 		<script src="js/attack.js"></script>

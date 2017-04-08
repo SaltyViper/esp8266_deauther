@@ -4,7 +4,7 @@
 		<link rel="stylesheet" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=0.8">
 	</head>
-	<body>
+	<body bgcolor="#0f0f0f">
 		<nav>
 			<a href="/">APs</a>
 			<a href="clients">Clients</a>
@@ -22,30 +22,30 @@
 			<label for="ssid">SSID:</label>
 			<input type="text" id="ssid" minlength="1" maxlength="32">
 			<br />
-			<label for="ssidHidden">hidden:</label>
+			<label for="ssidHidden">Hidden:</label>
 			<input type="checkbox" name="ssidHidden" id="ssidHidden" value="false">
 			<br />
 			
-			<label for="password">password:</label>
+			<label for="password">Password:</label>
 			<input type="text" id="password" minlength="8" maxlength="32">
 			<p class="small">must have at least 8 characters! (needs restart)</p>
 			<br />
 			
-			<label for="apChannel">channel:</label>
+			<label for="apChannel">Channel:</label>
 			<input type="number" id="apChannel" min="1" max="14">
 			
 			<br />
 			<br />
-			<p class="block bold">AP scan</p>
+			<p class="block bold">AP Scan</p>
 			
-			<label for="apScanHidden">scan for hidden APs:</label>
+			<label for="apScanHidden">Scan for hidden APs:</label>
 			<input type="checkbox" name="apScanHidden" id="apScanHidden" value="false">
 
 			<br />
 			<br />
 			<p class="block bold">Client Scan</p>
 			
-			<label for="scanTime">default scan time:</label>
+			<label for="scanTime">Default scan time:</label>
 			<input type="number" id="scanTime" min="1" max="255">s
 			
 			<br />
@@ -53,33 +53,33 @@
 			
 			<p class="block bold">Attack</p>
 			
-			<label for="timeout">timeout:</label>
+			<label for="timeout">Timeout:</label>
 			<input type="number" id="timeout" min="-1" max="65536">s
 			<p class="small">0 = no timeout</p>
 			
-			<label for="ssidEnc">WPA2 beacons:</label>
+			<label for="ssidEnc">WPA2 Beacons:</label>
 			<input type="checkbox" name="ssidEnc" id="ssidEnc" value="false">
 			<br />
 			
-			<label for="useLed">use LED:</label>
+			<label for="useLed">Use LED:</label>
 			<input type="checkbox" name="useLed" id="useLed" value="false">
 			<br />
 			
-			<label for="deauthReason">deauth reason:</label>
+			<label for="deauthReason">Deauth Reason:</label>
 			<input type="number" id="deauthReason" min="1" max="45">
-			<p class="small">reason codes: <a target="_blank" href="http://www.aboutcher.co.uk/2012/07/linux-wifi-deauthenticated-reason-codes/">click</a></p>
+			<p class="small">Reason codes: <a target="_blank" href="http://www.aboutcher.co.uk/2012/07/linux-wifi-deauthenticated-reason-codes/">click</a></p>
 			
-			<label for="packetRate">packetrate:</label>
+			<label for="packetRate">Packetrate:</label>
 			<input type="number" id="packetRate" min="1" max="100">pkts/s
 			<p class="small">only for deauth attack - may cause instability!</p>
 			
-			<label for="channelHop">channel hopping:</label>
+			<label for="channelHop">Channel Hopping:</label>
 			<input type="checkbox" name="channelHop" id="channelHop" value="false">
 			<p class="small">only for deauth attack - packetrate will be ignored!</p>
 			<br />
 			
 			<br />
-			<button class="warnBtn" onclick="resetSettings()">reset</button> <button onclick="saveSettings()">save</button><p class="small" id="saved"></p><br \>
+			<button class="warnBtn" onclick="resetSettings()">Reset</button> <button onclick="saveSettings()">Save</button><p class="small" id="saved"></p><br \>
 			<br />
 			<br />
 			
@@ -88,7 +88,7 @@
 			<tr><th>MAC</th><th>Vendor</th><th>Name</th><th>X</th></tr>
 			</table>
 			<br />
-			<button class="warnBtn" onclick="clearNameList()">clear</button></p>
+			<button class="warnBtn" onclick="clearNameList()">Clear</button></p>
 		</div>
 		
 		<table>
